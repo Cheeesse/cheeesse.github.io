@@ -622,18 +622,22 @@ a.back-to-top:hover, a.back-to-top:focus {
    Countdown Style Start
    ========================================================================== */
 .bg-wraper {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  min-height: 700px;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100vh; /* 改为视口高度 */
+    min-height: 100vh; /* 确保最小高度 */
+    width: 100%;
+}
+
+#example {
+    height: 100vh !important; /* 强制使用视口高度 */
 }
 
 .countdown-timer {
   color: #fff;
   position: absolute;
   margin: 0 auto;
-  top: 16%;
+  top: 23%;
   text-align: center;
   width: 100%;
 }
